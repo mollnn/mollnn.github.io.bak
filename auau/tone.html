@@ -1,0 +1,34 @@
+<html style="margin: 5%; font-size: 200%">
+<style>
+.slider {
+ width: 80%;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+<! taken from
+https://stackoverflow.com/questions/6343450/generating-sound-on-the-fly-with-javascript-html5>
+
+
+frequency
+<input type="range" class="slider" id="fIn" min="1.30" max="4.3" step="0.01" oninput="show()" />
+<span id="fOut"></span><br>
+type
+<input type="range" id="tIn" min="0" max="3" oninput="show()" />
+<span id="tOut"></span><br>
+volume
+<input type="range" id="vIn" min="0" max="100" oninput="show()" />
+<span id="vOut"></span><br>
+duration
+<input type="range" id="dIn" min="30" max="2000" oninput="show()" />
+<span id="dOut"></span>
+<br>
+<button style="font-size: 100%; background: #0F0;" onclick='beep();' id="play">Play</button>
+
+<script src="tone.js"></script>
+</body>
+</html>
