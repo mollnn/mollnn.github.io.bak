@@ -14,7 +14,7 @@ body  {
 }
 
 #container {
-  margin-left:10vw;
+  margin-left:1vw;
 }
 
 canvas {
@@ -24,7 +24,7 @@ canvas {
 
 #wavezoom {
   height: 1px;
-  width: 500px;
+  width: 400px;
 }
 
 p     { display: table-row;  }
