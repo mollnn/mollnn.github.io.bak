@@ -67,7 +67,7 @@ document.getElementById("record").onmousedown = function() {
 };
 
 document.getElementById("record").onmouseup = function() {
-  setTimeout(stopRecording, 250);
+  setTimeout(stopRecording, 400);
 }
 
 function initializePlayers() {
