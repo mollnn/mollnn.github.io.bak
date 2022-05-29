@@ -32,8 +32,6 @@ Input play-through monitoring:
   <input id="playSample" type="button" class="btn" value="play"
     onclick="playSample();">
   <input id="record" style="color:red;" type="button" class="btn" value="hold to record"/>
-  <input id="zoomin" type="button" class="btn" value="zoom in"/>
-  <input id="zoomout" type="button" class="btn" value="zoom out"/>
   <a id="save" class="btn" href="#" style="visibility:hidden">save</a>
 </div>
 
@@ -41,25 +39,25 @@ Input play-through monitoring:
 
 <audio id="snippet" controls type="audio/mpeg"></audio><br/>
 <p>selected audio snippet</p>
-<div id="zoomcanvas"><canvas id="wavezoom" height="100" width="1000"></canvas></div>
+<div id="zoomcanvas" height="1"><canvas id="wavezoom" height="1" width="1000"></canvas></div>
 <div id="snippet-controls">
   <input id="playSnippet" type="button" class="btn" value="play/pause"
     onclick="playSnippet();">
   <p><label for="sniploop">loop audio</label><input id="sniploop" type="checkbox"/></p>
   <p><label for="reverseplay">reverse playback</label><input id="reverseplay" type="checkbox"/></p>
-  <p> <label for="zoomstart">zoom starting sample</label><input id="zoomstart" type="number" value="3000" step="1"/> </p>
-  <p> <label for="fftexp">zoom width index</label><input id="fftexp" type="number" value="11"/> </p>
+  <p> <label for="zoomstart">zoom starting sample</label><input id="zoomstart" type="number" value="4800" step="1"/> </p>
+  <p> <label for="fftexp">zoom width index</label><input id="fftexp" type="number" value="13"/> </p>
 </div>
 
 <br/>
 <p> Frequency spectrum</p>
 <div id="fftcanvas"><canvas id="wavefft" height="100" width="1000"></canvas></div>
 <p> <label for="guidetoggle">show harmonic guides</label><input
-id="guidetoggle" type="checkbox"/> &nbsp; (click on spectrum to place fundamental)</p>
-<p> <label for="guidefreq">guide frequency</label><input id="guidefreq" type="number" value="440" step="1"/></p>
+id="guidetoggle" type="checkbox" checked/> &nbsp; (click on spectrum to place fundamental)</p>
+<p> <label for="guidefreq">guide frequency</label><input id="guidefreq" type="number" value="110" step="1"/></p>
 <p> <label for="logtoggle">log scale</label><input id="logtoggle" type="checkbox"/> </p>
 <p> <label for="freqmin">min frequency</label><input id="freqmin" type="number" value="0" step="100"/> </p>
-<p> <label for="freqmax">max frequency</label><input id="freqmax" type="number" value="4000" step="100"/> </p>
+<p> <label for="freqmax">max frequency</label><input id="freqmax" type="number" value="2000" step="100"/> </p>
 <hr/>
 
 

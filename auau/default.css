@@ -19,7 +19,12 @@ body  {
 
 canvas {
   height: 100px;
-  width: 1000px;
+  width: 500px;
+}
+
+#wavezoom {
+  height: 1px;
+  width: 500px;
 }
 
 p     { display: table-row;  }
@@ -36,7 +41,7 @@ a.btn, input, button {
   margin-left: 30px;
 }
 a.btn, input.btn {
-  font-size: 12px;
+  font-size: 18px;
   border-color: gray;
   margin: 0px 0px 3px 3px;
   padding: 3px 6px 3px 6px;
@@ -52,7 +57,7 @@ h1 {
   margin-right:10vw;
 }
 
-@media all and (max-width: 1000px) and (min-width:801px){
+@media all and (max-width: 600px) and (min-width:201px){
   input {
     -ms-transform: scale(1.5); /* IE */
     -moz-transform: scale(1.5); /* FF */
@@ -68,7 +73,7 @@ h1 {
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 500px) {
   input {
     -ms-transform: scale(2); /* IE */
     -moz-transform: scale(2); /* FF */
